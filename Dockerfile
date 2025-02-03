@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-MAINTAINER Robin Ostlund <me@robinostlund.name>
+MAINTAINER Kruky
 
 ENV INST_RCLONE_VERSION=current
 ENV ARCH=amd64
