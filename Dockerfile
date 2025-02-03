@@ -17,7 +17,7 @@ ENV TZ=
 RUN apk -U add ca-certificates fuse wget dcron tzdata \
     && rm -rf /var/cache/apk/* \
     && cd /tmp \
-    && wget -q http://downloads.rclone.org/rclone-${INST_RCLONE_VERSION}-linux-${ARCH}.zip \
+    && wget -q https://downloads.rclone.org/rclone-${INST_RCLONE_VERSION}-linux-${ARCH}.zip \
     && unzip /tmp/rclone-${INST_RCLONE_VERSION}-linux-${ARCH}.zip \
     && mv /tmp/rclone-*-linux-${ARCH}/rclone /usr/bin \
     && rm -r /tmp/rclone*
