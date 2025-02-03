@@ -17,7 +17,7 @@ ENV TZ=
 RUN apk -U add ca-certificates fuse wget dcron tzdata \
     && rm -rf /var/cache/apk/* \
     && cd /tmp \
-    && wget -q https://beta.rclone.org/branch/fix-7405-onedrive-upload/v1.66.0-beta.7595.5841b1253.fix-7405-onedrive-upload/rclone-v1.66.0-beta.7595.5841b1253.fix-7405-onedrive-upload-linux-amd64.zip\
+    && wget -q https://beta.rclone.org/branch/fix-7405-onedrive-upload/v1.66.0-beta.7595.5841b1253.fix-7405-onedrive-upload/rclone-v1.66.0-beta.7595.5841b1253.fix-7405-onedrive-upload-linux-amd64.zip \
     && unzip /tmp/rclone-*-linux-${ARCH}.zip \
     && mv /tmp/rclone-*-linux-${ARCH}/rclone /usr/bin \
     && rm -r /tmp/rclone*
